@@ -8,9 +8,9 @@ if(!$conn){
 }
 
 $email = $_POST['email'] ?? '';
-$id = $_POST['id']?? '';
-$mobile = $_POST['mobile']?? '';
-$password = $_POST['password']?? '';
+$id = $_POST['id'] ?? '';
+$mobile = $_POST['mobile'] ?? '';
+$password = $_POST['password'] ?? '';
 
 $sql = "SELECT * FROM `login form` where email = '$email''$id''$mobile'and password ='$password'";
 $result = mysqli_query ($conn,$sql);
