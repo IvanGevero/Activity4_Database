@@ -12,7 +12,7 @@ $id = $_POST['id']?? '';
 $mobile = $_POST['mobile']?? '';
 $password = $_POST['password']?? '';
 
-$sql = "SELECT * FROM `login form` where email ='$email''$id''$mobile'and password = '$password'";
+$sql = "SELECT * FROM `login form` where email = '$email''$id''$mobile'and password ='$password'";
 $result = mysqli_query ($conn,$sql);
 
 if(mysqli_num_rows($result) > 0) {
