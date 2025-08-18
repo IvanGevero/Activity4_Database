@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect("localhost","root","","activityloginform");
+$conn = mysqli_connect("localhost","root","","itpc2");
 
 if(!$conn){
     die("Connection failed");
@@ -8,10 +8,10 @@ if(!$conn){
 }
 
 
-$id = $_POST['id'] ?? '';
-$password = $_POST['password'] ?? '';
+$id = $_POST['id'];
+$password = $_POST['password'];
 
-$sql = "SELECT * FROM `login form` where email = '$email''$id''$mobile'and password ='$password'";
+$sql = "SELECT * FROM admin WHERE id='$id' AND password='password'";
 $result = mysqli_query ($conn,$sql);
 
 if(mysqli_num_rows($result) > 0) {
