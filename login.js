@@ -1,6 +1,6 @@
 function validateform() {
-    const id = document.getElementById("id").value.trim();
-    const pass = document.getElementById("password").value.trim();
+    let id = document.getElementById("id").value.trim();
+    let pass = document.getElementById("password").value.trim();
 
     if (id === ""  || pass === "") {
         alert("Both fields are required.");
